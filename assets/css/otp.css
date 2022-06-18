@@ -1,0 +1,70 @@
+#flex{
+    margin-left: 5%;
+}
+button{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 42%;
+}
+form{
+    margin-top: 2%;
+}
+input{
+    margin-top: 1%;
+    margin-left: 35%;
+    padding-right: 10%;
+    border-top: none;
+    border-color: black;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    color: black;
+    margin-bottom: 0.2%;
+    font-family:'Poppins', sans-serif;
+}
+
+/* Desktop Large Screen */
+@media screen and (max-width: 1200px) {
+    input{
+        margin-left: 35%;
+    }
+    button{
+        margin-left: 43%;
+    }
+}
+/* Small Screen */
+@media screen and (max-width: 1024px) {
+    input{
+        margin-left: 30%;
+    }
+    button{
+        margin-left: 39%;
+    }
+}
+/* Ipad /Tablets */
+@media screen and (max-width: 768px) {
+    input{
+        margin-left: 22%;
+    }
+    button{
+        margin-left: 34%;
+    }
+}
+/* Small */
+@media screen and (max-width: 570px) {
+    input{
+        margin-left: 5%;
+    }
+    button{
+        margin-left: 18%;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 480px) {
+    input{
+        margin-left: 0%;
+    }
+    button{
+        margin-left: 15%;
+    }
+}

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <%- style %>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body> 
+        <body>
+            <%- include('_header');%>
+            <%- body %>
+            <%- include('_footer');%>
+        <script>
+            <% if (flash.success && flash.success.length > 0) {%>
+                new Noty({
+                    theme: 'relax',
+                    text: "<%= flash.success %>",
+                    type: 'success',
+                    layout: 'topRight',
+                    timeout: 1000
+                    
+                }).show();    
+            <%} %>
+
+            <% if (flash.error && flash.error.length > 0) {%>
+                new Noty({
+                    theme: 'relax',
+                    text: "<%= flash.error %>",
+                    type: 'error',
+                    layout: 'topRight',
+                    timeout: 1000
+                    
+                }).show();    
+            <%} %>
+        </script>
+    </body>
+</html>

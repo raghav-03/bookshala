@@ -1,0 +1,113 @@
+#display{
+    display: flex;
+    flex-wrap: wrap;
+}
+#pickup_book{
+    border: 1px solid black;
+    margin-top: 5%;
+    margin-left: -2%;
+    font-family: 'Poppins', sans-serif;
+    width: 32%;
+    margin-right: 3%;
+}
+#checked{
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 18px;
+    height: 18px;
+    background-color: rgb(115, 136, 161);
+}
+#bookimage{
+    margin-left: 35%;
+    margin-top: -5%;
+}
+#name{
+    margin-left: 14%;
+    margin-top: -2%;
+}
+#bookname{
+    margin-left: 14%;
+    margin-top: -2%;
+}
+#phone{
+    margin-left: 14%;
+    margin-top: -2%;
+}
+#mrp{
+    margin-left: 14%;
+    margin-top: -2%;
+}
+#address{
+    margin-left: 14%;
+    margin-top: -2%;
+}
+#city{
+    margin-left: 14%;
+    margin-top: -2%;
+}
+#state{
+    margin-left: 14%;
+    margin-top: -2%;
+}
+#pincode{
+    margin-left: 14%;
+    margin-top: -2%;
+}
+#e-mail{
+    margin-left: 14%;
+    margin-top: -2%;
+}
+#description{
+    margin-left: 14%;
+    margin-top: -2%;
+}
+#done{
+    padding: 2%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-left: 35%;
+}
+
+@media screen and (max-width: 1020px) {
+    #pickup_box p{
+        margin-left: 12%;
+    }
+}
+@media screen and (max-width: 975px) {
+    #pickup_book{
+        width: 48%;
+    }
+    #pickup_box p{
+        margin-left: 14%;
+    }
+}
+@media screen and (max-width: 770px) {
+    #pickup_box p{
+        margin-left: 11%;
+    }
+}
+@media screen and (max-width: 720px) {
+    #pickup_book{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 650px) {
+    #pickup_book{
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width: 500px) {
+    #pickup_box p{
+        margin-left: 12%;
+    }
+}
+@media screen and (max-width: 420px) {
+    #pickup_box p{
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 400px) {
+    #pickup_box p{
+        margin-left: 8%;
+    }
+}

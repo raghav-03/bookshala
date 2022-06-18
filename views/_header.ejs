@@ -1,0 +1,19 @@
+<header>
+    <div id="header">
+        <h1>BookShala</h1>
+        <a href="/" id="favicon"><img src="/images/logo.jpeg" alt="" width="100" id="logo"></a>
+        <ul id="user_profile">
+            <% if(locals.user){%>
+                <i class="fas fa-user"></i> <%= user.name %> 
+                <% if(user.donated!=0){%>
+                    <% for(var i=0; i<user.donated; i++) {%>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    <% } %>
+                <%}%>
+                <br>
+                <a href="/signout">Sign-out  <i class="fas fa-sign-out-alt"></i></a>
+            <% }%>
+        </ul>
+    </div>
+    <hr>
+</header>

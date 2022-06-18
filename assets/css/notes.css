@@ -1,0 +1,31 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#notesform input{
+    margin-top: 5%;
+    margin-left: 3%;
+    border-top: none;
+    border-color: black;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    margin-right: -2%;
+}
+#name{
+    padding-right: 10%;
+}
+#notes_upload{
+    margin-top: 2%;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#notes_list{
+    margin-top: 1%;
+}
+li{
+    margin-left: 1%;
+}

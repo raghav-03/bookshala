@@ -1,0 +1,99 @@
+#sellbooks{
+    margin-top: 5%;
+    margin-left: -5%;
+}
+#sellbooks input{
+    margin-top: 2%;
+    padding-right: 10%;
+    margin-left: 7%;
+    border-top: none;
+    border-color: black;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    color: black;
+    margin-bottom: 0.2%;
+    font-family: 'Poppins', sans-serif;
+}
+#sellbook{
+    margin-left: 48%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0.55%;
+    padding-top: 0.55%;
+    margin-top: 3%;
+}
+#instruction{
+    width: 75%;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 12%;
+    margin-top: 3%;
+    margin-bottom: -3%;
+}
+
+@media screen and (max-width: 1200px) {
+    #sellbooks input{
+        padding-right: 8%;
+    }
+}
+@media screen and (max-width: 975px) {
+    #sellbooks input{
+        padding-right: 4%;
+    }
+}
+@media screen and (max-width: 900px) {
+    #sellbook{
+        padding-bottom: 0.75%;
+        padding-top: 0.75%;
+    }
+    #sellbooks input{
+        margin-left: 12%;
+        padding-right: 8%;
+    }
+}
+@media screen and (max-width: 680px) {
+    #sellbook{
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-bottom: 1%;
+        padding-top: 1%;
+    }
+    #sellbooks input{
+        margin-left: 35%;
+        padding-right: 10%;
+    }
+    #instruction{
+        margin-top: 7%;
+    }
+}
+@media screen and (max-width: 640px) {
+    #sellbook{
+        padding-bottom: 1.25%;
+        padding-top: 1.25%;
+    }
+    #instruction{
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width: 560px) {
+    #sellbooks input{
+        margin-left: 30%;
+        margin-top: 2.5%;
+        padding-right: 10%;
+    }
+}
+@media screen and (max-width: 530px) {
+    #instruction{
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width: 420px) { 
+    #sellbooks input{
+        margin-left: 25%;
+        margin-top: 2.5%;
+        padding-right: 10%;
+    }
+    #sellbook{
+        margin-left: 45%;
+    }
+}

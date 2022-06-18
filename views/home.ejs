@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title%>
+        </title>
+         <!-- adding css file -->
+        <link rel="stylesheet" href="/css/all.css">
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="icon" href="/favicon/favicon.ico" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+    </head>
+    <body>
+        <div id="margintop">
+        <form action="/sell-book" method="GET" id="outer_form">
+            <button id="sell" type="submit">
+                Sell/Donate Book
+            </button>
+            <button form="buy" id="buy_book" type="submit">
+                Buy Book
+            </button>
+            <button form="notes" id="notes_button" type="submit">
+                Notes
+            </button>
+            <button form="request" id="request_button" type="submit">
+                Request Book
+            </button>
+        </form>
+        <form action="/buy-book" method="GET" id="buy">
+        </form>
+        <form action="/notes" method="GET" id="notes">
+        </form>
+        <form action="/request" method="GET" id="request">
+        </form>
+        <div id="about">
+            <div id="inner_about">
+                <h2>About Us</h2>
+                BookShala, an organization made for the unprivileged students who could not afford expensive books.
+                <br><br>
+                Students can sell or buy the books at reasonable prices.
+                <br><br>
+                Since, it's an initiative to help the students, anyone who wish to donate their books are warmly welcomed by our community.
+                <br><br>
+                Students can also download revision notes from the website.
+                <br><br>
+                You will earn a loyality badge when you donate a book as a sign of contribution to the society
+            </div>
+        </div>
+        </div>
+        <div id="breakline"></div>
+    </body>
+</html>

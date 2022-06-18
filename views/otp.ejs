@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title%>
+        </title>
+         <!-- adding css file -->
+        <link rel="stylesheet" href="/css/all.css">
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="stylesheet" href="/css/otp.css">
+        <link rel="icon" href="/favicon/favicon.ico" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+    </head>
+    <body>
+        <div id="flex">
+        <form action="/enterotp" method="POST">
+            <input id="email" type="email" name="email" placeholder="Your Email" required>
+            <br>
+            <input id="password" type="text" name="otp" placeholder="Otp" required>
+            <br>
+            <br>
+            <button id="login" type="submit">
+                Sign-Up
+                <i class="fas fa-user-plus"></i>
+            </button>
+        </form>
+        <form action="/resend" method="POST" id="otp">
+            <input id="email" type="email" name="email" placeholder="Your Email" required>
+            <br>
+            <br>
+            <button id="loginbutton" type="submit">
+                Re-Send Otp
+            </button>
+        </form>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title%>
+        </title>
+         <!-- adding css file -->
+        <link rel="stylesheet" href="/css/all.css">
+        <link rel="stylesheet" href="/css/notes.css">
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="icon" href="/favicon/favicon.ico" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+    </head>
+    <body>
+        <form id="notesform" action="/creat_notes" method="POST" enctype="multipart/form-data">
+            <input id="name" type="text" name="owner" placeholder="Title of Notes" required>
+            <input id="notes_input" type="file" name="notes" placeholder="Upload Notes" required>
+            <br>
+            <button id="notes_upload" type="submit">
+                Upload
+            </button>
+        </form>
+        <hr>
+        <ol>
+            <% for (let i of notes_list) { %> 
+                <li>
+                    <div id="notes_list">
+                        <%= i.name%> 
+                        <a href="<%= i.notes %>" download>Download</a>
+                    </div>
+                </li>
+            <% } %>
+        </ol>
+    </body>
+</html>

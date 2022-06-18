@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title%>
+        </title>
+         <!-- adding css file -->
+        <link rel="stylesheet" href="/css/all.css">
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="stylesheet" href="/css/request.css">
+        <link rel="icon" href="/favicon/favicon.ico" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+    </head>
+    <body>
+        <form id="requestbooks" action="/requestbooks" method="POST">
+            <input id="name" type="text" name="owner" placeholder=" Name" required>
+            <input id="bookname" type="text" name="bookname" placeholder=" Book Name" required>
+            <input id="number" type="text" name="number" placeholder=" Number" required>
+            <br>
+            <button id="requestbooks" type="submit">
+                Request
+            </button>
+        </form>
+    </body>
+</html>

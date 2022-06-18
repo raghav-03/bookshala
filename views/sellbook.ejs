@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title%>
+        </title>
+         <!-- adding css file -->
+        <link rel="stylesheet" href="/css/all.css">
+        <link rel="stylesheet" href="/css/sell.css">
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="icon" href="/favicon/favicon.ico" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+    </head>
+    <body>
+        <h4 id="instruction">If you want to donate your book(s), please put 0 in the mrp.
+            <br>
+            Book(s) can be sold at upto 40% of the original cost of the book depending upon the condition of the book(s).
+        </h4>
+        <form id="sellbooks" action="/sell" method="POST" enctype="multipart/form-data">
+            <input id="name" type="text" name="owner" placeholder=" Name" required>
+            <input id="bookname" type="text" name="bookname" placeholder=" Book Name" required>
+            <input id="mrp" type="text" name="mrp" placeholder=" MRP of Book" required>
+            <input id="number" type="text" name="number" placeholder=" Number" required>
+            <input id="address" type="text" name="address" placeholder=" Address for Pickup" required>
+            <input id="city" type="text" name="city" placeholder=" City" required>
+            <input id="state" type="text" name="state" placeholder=" State" required>
+            <input id="pincode" type="text" name="pincode" placeholder=" Pincode" required>
+            <input id="email" type="email" name="email" placeholder=" Email"  required >
+            <input id="descriptionofbook" type="text" name="description" placeholder=" Description" required>
+            <input id="image" type="file" name="image" required>
+            <br>
+            <button id="sellbook" type="submit">
+                Sell
+            </button>
+        </form>
+    </body>
+</html>

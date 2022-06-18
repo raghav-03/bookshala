@@ -1,0 +1,137 @@
+#outer_form{
+    padding-bottom: 22%;
+    background-image: url("https://images.unsplash.com/photo-1603168679722-7874927c45d0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80");
+    background-size: 100% 100%;
+    border: 1.5px solid black;
+    margin-top: 2%;
+}
+#inner_about{
+    border: 2px white solid;
+    font-family: 'Poppins', sans-serif;
+    padding: 2.5%;
+}
+#sell{
+    margin-left: 18%;
+    margin-top: 5%;
+    padding-bottom: 1.5%;
+}
+#buy_book{
+    margin-left: 5%;
+    padding-left: 3%;
+    padding-right: 3.5%;
+}
+#notes_button{
+    margin-left: 5%;
+    padding-left: 4%;
+    padding-right: 4.2%;
+}
+#request_button{
+    margin-left: 5%;
+    margin-top: 5%;
+    padding-bottom: 1.5%;
+}
+#about{
+    width: 75%;
+    margin-left: 11%;
+    margin-top: -17%;
+    padding: 14px;
+    margin-bottom: 5%;
+    background-color: rgb(197 156 68);
+    background-size: 100% 100%;
+}
+#about h2{
+    text-align: center;
+    margin-bottom: 6%;
+    margin-left:-5%;
+}
+
+/* Desktop Large Screen */
+@media screen and (max-width: 1200px) {
+    #sell{
+        margin-left: 17%;
+    }
+    #outer_form{
+        padding-bottom: 25%;
+    }
+    #about{
+        margin-top: -20%;
+    }
+}
+/* Small Screen */
+@media screen and (max-width: 1024px) {
+    #sell{
+        margin-left: 14%;
+    }
+    #outer_form{
+        padding-bottom: 28%;
+    }
+    #about{
+        margin-top: -23%;
+    }
+}
+/* extra small */
+@media screen and (max-width: 824px) {
+    #sell{
+        margin-left: 11%;
+    }
+    #outer_form{
+        padding-bottom: 30%;
+    }
+    #about{
+        margin-top: -25%;
+    }
+}
+/* Ipad /Tablets */
+@media screen and (max-width: 768px) {
+    #sell{
+        margin-left: 14%;
+    }
+    #notes_button{
+        margin-left: 2%;
+    }
+    #buy_book{
+        margin-left: 2%;
+    }
+    #request_button{
+        margin-left: 2%;
+    }
+    #outer_form{
+        padding-bottom: 35%;
+    }
+    #about{
+        margin-top: -30%;
+    }
+}
+/* Small */
+@media screen and (max-width: 620px) {
+    #sell{
+        margin-left: 2%;
+    }
+    #outer_form{
+        padding-bottom: 40%;
+    }
+    #about{
+        margin-top: -40%;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 480px) {
+    #sell{
+        margin-left: 15%;
+    }
+    #notes_button{
+        margin-left: 15%;
+    }
+    #buy_book{
+        margin-left: 10%;
+    }
+    #request_button{
+        margin-left: 22%;
+    }
+    #outer_form{
+        padding-bottom: 55%;
+    }
+    #about{
+        margin-top: -55%;
+    }
+}

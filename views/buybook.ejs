@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title%>
+        </title>
+         <!-- adding css file -->
+        <link rel="stylesheet" href="/css/all.css">
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="stylesheet" href="/css/buybook.css">
+        <link rel="icon" href="/favicon/favicon.ico" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+    </head>
+    <body>
+        <ol id="list">
+            <% for (let i of book_list) { %> 
+                <% if(i.available == "yes"){%>
+                    <div id="booklist">
+                        <form action="/purchased" method="POST" id="DEL">
+                            <input  type="checkbox" name="task" id="checked" value="<%= i.id%>"> 
+                            <div id="bookdetail">
+                                <img src="<%=i.image%>" alt="" width="100">
+                                <p id="bookname">Bookname- <%= i.bookname%></p>
+                                <p id="bookmrp">Amount- <%= i.mrp*.45%> </p>
+                                <p id="description">Description- <%=i.description%></p>
+                            </div>
+                            <div  id="buyform">
+                                <input id="name" class="form" type="text" name="owner" placeholder="Name" required size="27">
+                                <input id="number" class="form" type="text" name="number" placeholder="Contact Number" required size="27">
+                                <input id="address" class="form"  type="text" name="address" placeholder="Address for Pickup" required size="27">
+                                <input id="city" class="form"  type="text" name="city" placeholder="City" required size="27">
+                                <input id="state" class="form"  type="text" name="state" placeholder="State" required size="27">
+                                <input id="pincode" class="form"  type="text" maxlength="6" name="pincode" placeholder="Pincode" required size="27">
+                                <input id="emailaddress" class="form"  type="email" name="email" placeholder="Email"  required size="27" >
+                                <button id="delete" type="submit">
+                                    Buy Book
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                <%}%>    
+            <% } %>
+        </ol>
+    </body>
+</html>

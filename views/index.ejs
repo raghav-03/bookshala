@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title%>
+        </title>
+         <!-- adding css file -->
+        <link rel="stylesheet" href="/css/all.css">
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="icon" href="/favicon/favicon.ico" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+    </head>
+    <body>
+        <div id="quote">
+            <h1>“If You are planning for a year, sow rice; if you are planning for a decade, plant trees; if you are planning for a lifetime, educate people”</h1>  
+        </div>
+        <br><br><br>    
+        <div id="outer_div">
+            <div id="inner_div">
+                <div id="signin_div">
+                    <h1 id="signin">Log In</h1>
+                    <form action="/create-session" method="POST">
+                        <input id="email" type="email" name="email" placeholder="Email"  required >
+                        <br>
+                        <input id="password" type="password" name="password" placeholder="Password"  required >
+                        <br>
+                        <br>
+                        <button id="login" type="submit" >
+                            Log In
+                            <i class="fas fa-sign-in-alt"></i>
+                        </button>
+                    </form>
+                </div>
+                <div id="signup_div">
+                    <h1 id="signup">Sign Up</h1>
+                    <form action="/create" method="POST" id="signupform">
+                        <input id="password" type="text" name="name" placeholder="Your Name" required>
+                        <br>
+                        <input id="email" type="email" name="email" placeholder="Your Email" required>
+                        <br>
+                        <input id="password" type="password" name="password" placeholder="Password" required>
+                        <br>
+                        <input id="password" type="password" name="confirm_password" placeholder="Confirm Password" required>
+                        <br>
+                        <br>
+                    </form>
+                    <button id="getotp" type="submit" form="signupform">
+                        Get Otp
+                    </button>
+                    <a href="/otp">
+                        <button id="enterotp">
+                        Enter Otp
+                    </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="services">
+            <h3 >Our Services</h3>
+            <div id="imagesblock">
+                <i id="delivered" class="fas fa-shipping-fast fa-5x"></i>
+                <p id="delivered_data">Free Delivery</p>
+                <i id="pickup" class="fas fa-shopping-bag fa-5x"></i>
+                <p id="pickup_data">Free Pickup</p>
+                <i id="notes" class="fas fa-file-alt fa-5x"></i>
+                <p id="notes_data">Notes</p>
+            </div>
+            <div id="images">
+                <i id="delivered" class="fas fa-shipping-fast fa-5x"></i>
+                <i id="pickup" class="fas fa-shopping-bag fa-5x"></i>
+                <i id="notes" class="fas fa-file-alt fa-5x"></i>
+            </div>
+            <div id="detail">
+                <p id="delivered_data">Free Delivery</p>
+                <p id="pickup_data">Free Pickup</p>
+                <p id="notes_data">Notes</p>
+            </div>
+        </div>
+        <br>
+        <br>
+    </body>
+</html>

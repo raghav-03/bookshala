@@ -1,0 +1,238 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#quote{
+    padding-top: 12%;
+    padding-bottom: 12%;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_eIpeikCY0TuD1UODvCXTq7LWJUM2dZo8BA&usqp=CAU');
+    background-size: 100% 100%;
+    padding: 8%;
+    margin-top: 2%;
+}
+#quote h1{
+    color: white;
+    margin-left: 2%;
+}
+#outer_div{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: url("../images/background.jpeg");
+    background-size: 100% 100%;
+}
+#inner_div{
+    display: flex;
+}
+#signin_div{
+    margin-left: 15%;
+    width: 30%;
+}
+#signup_div{
+    margin-left: 15%;
+    width: 30%;
+}
+input{
+    margin-top: 3%;
+    padding-right: 20%;
+    border-top: none;
+    border-color: black;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    color: black;
+    margin-bottom: 0.2%;
+    font-family:'Poppins', sans-serif;
+}
+::placeholder {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    padding: 3%;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 16px;
+    background-color: transparent;
+}
+button:hover{
+    transform: scale(1.2);
+}
+#signin{
+    margin-left: 20%;
+}
+#signup{
+    margin-left: 15%;
+}
+#signin_div button{
+    margin-left: 20%;
+    margin-top: 80px;
+}
+#getotp{
+    margin-left: 10%;
+    margin-top: 1.5%;
+}
+#enterotp{
+    margin-left: 0%;
+}
+#services h3{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 46%;
+}
+#images{
+    display: flex;
+}
+#detail{
+    display: flex;
+}
+#delivered{
+    margin-left: 20%;
+    padding-right: 10%;
+    border-right: 2px black solid;
+}
+#pickup{
+    margin-left: 10%;
+    padding-right: 10%;
+    border-right: 2px black solid;
+}
+#notes{
+    margin-left: 12%;
+}
+#delivered_data{
+    margin-left: 20.5%;
+}
+#pickup_data{
+    margin-left: 20%;
+}
+#notes_data{
+    margin-left: 21.8%;
+}
+#imagesblock{
+    display: none;
+}
+/* Small Screen */
+@media screen and (max-width: 1024px) {
+    #services h3{
+        margin-left: 42%;
+    }
+    #delivered{
+        margin-left: 15%;
+    }
+    #delivered_data{
+        margin-left: 15%;
+    }
+    #signin_div button{
+        margin-left: 20%;
+        margin-top: 75px;
+    }
+}
+/* Ipad /Tablets */
+@media screen and (max-width: 768px) {
+    #outer_div{
+        background-image: url("../images/background1.jpeg");
+        background-size: 100% 100%;
+    }
+    #signin_div{
+        width: auto;
+    }
+    #signup_div{
+        width: auto;
+    }
+    #inner_div{
+        display: inline;
+    }
+    input{
+        margin-top: 1.5%;
+        margin-left: 15%;
+    }
+    button{
+        padding: 1.75%;
+    }
+    #signup_div{
+        margin-left: 15%;
+    }
+    #signin_div{
+        margin-left: 15%;
+    }
+    #signin_div button{
+        margin-left: 33%;
+        margin-top: 35px;
+    }
+    #signup{
+        margin-left: 30%;
+        margin-top: 100px;
+    }
+    #signin{
+        margin-left: 30%;
+    }
+    #getotp{
+        margin-left: 28%;
+    }
+    #delivered{
+        margin-left: 11%;
+    }
+    #delivered_data{
+        margin-left: 11%;
+    }
+}
+/* Small */
+@media screen and (max-width: 570px) {
+    #signup_div{
+        margin-left: 10%;
+    }
+    #signin_div{
+        margin-left: 10%;
+    }
+    #delivered{
+        margin-left: 5%;
+    }
+    #delivered_data{
+        margin-left: 5%;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 480px) {
+    #signup_div{
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+    #signin_div{
+        margin-left: 0%;
+        margin-top: 8%;
+    }
+    #services h3{
+        margin-left: 32%;
+    }
+    #images{
+        display: none;
+    }
+    #detail{
+        display: none;
+    }
+    #imagesblock{
+        display: block;
+    }
+    #delivered{
+        margin-left: 35%;
+        border-right: none;
+    }
+    #pickup{
+        margin-left: 39%;
+        border-right: none;
+    }
+    #notes{
+        margin-left: 40%;
+    }
+    #delivered_data{
+        margin-left: 35%;
+    }
+    #pickup_data{
+        margin-left: 37%;
+    }
+    #notes_data{
+        margin-left: 42%;
+    }
+    #signin_div button {
+        margin-left: 35%;
+    }
+    #getotp {
+        margin-left: 30%;
+    }
+}

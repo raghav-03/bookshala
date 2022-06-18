@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title%>
+        </title>
+        <!-- adding css file -->
+        <link rel="stylesheet" href="/css/all.css">
+        <link rel="stylesheet" href="/css/admin.css">
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="icon" href="/favicon/favicon.ico" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+    </head>
+    <body>
+        <ol id="display">
+            <% for (let i of book_list) { %> 
+                <% if(i.pickup == "yes" && i.drop=="sale"){%>
+                    <form action="/pickup" method="POST" id="pickup_book">
+                        <input  type="checkbox" name="task" id="checked" value="<%= i.id%>"> 
+                        <p id="bookimage"><img src="<%=i.image%>" alt="" width="100"></p>
+                        <div id="pickup_box">
+                            <p id="name">Name - <%= i.name%> </p>
+                            <p id="bookname">Bookname - <%= i.bookname%></p> 
+                            <p id="phone">Contact Number - <%= i.number%> </p>
+                            <p id="mrp">Amount - <%= i.mrp*.35%></p> 
+                            <p id="address">Address - <%= i.address%> </p>
+                            <p id="city">City - <%= i.city%></p> 
+                            <p id="state">State - <%= i.state%> </p>
+                            <p id="pincode">Pincode - <%= i.pincode%> </p>
+                            <p id="e-mail">E-Mail - <%= i.email%> </p>
+                            <p id="description">Description - <%=i.description%></p>
+                        </div>
+                        <button id="done" type="submit">
+                            Pickup Done
+                        </button>
+                    </form>
+                <%}%>    
+            <% } %>
+            <% for (let i of book_list) { %> 
+                <% if(i.pickup == "yes" && i.drop=="buy"){%>
+                    <form action="/pickup" method="POST" id="pickup_book">
+                        <input  type="checkbox" name="task" id="checked" value="<%= i.id%>"> 
+                        <p id="bookimage"><img src="<%=i.image%>" alt="" width="100"></p>
+                        <div id="pickup_box">
+                            <p id="name">Name - <%= i.name%> </p>
+                            <p id="bookname">Bookname - <%= i.bookname%></p> 
+                            <p id="phone">Contact Number - <%= i.number%> </p>
+                            <p id="mrp">Amount - <%= i.mrp*.35%></p> 
+                            <p id="address">Address - <%= i.address%> </p>
+                            <p id="city">City - <%= i.city%></p> 
+                            <p id="state">State - <%= i.state%> </p>
+                            <p id="pincode">Pincode - <%= i.pincode%> </p>
+                            <p id="e-mail">E-Mail - <%= i.email%> </p>
+                            <p id="description">Description - <%=i.description%></p>
+                        </div>
+                        <button id="done" type="submit">
+                            Delivered
+                        </button>
+                    </form>
+                <%}%>    
+            <% } %>
+        </ol>
+    </body>
+</html>
