@@ -19,7 +19,7 @@ const flashmiddleware=require('./config/middleware');
 const expressLayouts = require('express-ejs-layouts');
 // connecting to veiw engine
 app.set('view engine','ejs');
-app.set('views','./views');
+app.set('views', path.join(__dirname, 'views'));
 //connecting to static assets
 app.use(express.static('assets'));
 app.use(expressLayouts);
