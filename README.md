@@ -6,4 +6,4 @@ Other features of platform includes posting request for books which are not avai
 
 Tech Used - Node.js , Mongodb , Express Js
 
-https://bookshala-raghav.herokuapp.com/index
+https://bookshala.vercel.app/index
