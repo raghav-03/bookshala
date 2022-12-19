@@ -53,10 +53,10 @@ app.use(flashmiddleware.setflash);
 // connecting to routes
 app.use('/',require('./routes/index'));
 // fire up the server
-app.listen(port,function(err){
+app.listen(process.env.PORT || 3601,function(err){
     if(err){
         console.log(`Error ${err}`);
         return;
     }
-    console.log(`Running fine on port ${port}`);
+    console.log(`Running fine on port ${process.env.PORT || 3601}`);
 });
